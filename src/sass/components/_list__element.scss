@@ -1,0 +1,44 @@
+.list__element {
+    padding: 10px;
+    white-space: nowrap;
+  }
+  
+  .list__element--background {
+    position: relative;
+    &:hover {
+      background-color: $background-color;
+    }
+    &:hover::after {
+      @include after();
+      left: 0px;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background-color: $alternative-link-color;
+    }
+  }
+  
+  .list__element--horizontal {
+    display: inline-block;
+  }
+  
+  .list__element--hover:hover {
+    background-color: #e3e3e3;
+  }
+  
+  .list__element--active {
+    background: #e3e3e3;
+  }
+  
+  .list__element--before {
+    position: relative;
+    padding: 20px 10px;
+    &::before {
+      @include after();
+      height: 100%;
+      width: 1px;
+      background-color: $background-color;
+      top: 0;
+      left: 0;
+    }
+  }

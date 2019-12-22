@@ -1,0 +1,56 @@
+.icons--menu {
+    margin: 0 25px 0 10px;
+  }
+  
+  .icons--veritical {
+    display: inline-block;
+  }
+  
+  .icons--small::before {
+    font-size: 12px;
+  }
+  
+  .icons--hover {
+    visibility: hidden;
+    margin: 0 10px
+  }
+  
+  .icons--after {
+    position: relative;
+    &::after {
+      @include after();
+      height: 6px;
+      width: 6px;
+      background-color: $alternative-link-color;
+      top: -3px;
+      right: 1px;
+      border-radius: 50%;
+    }
+  }
+  
+  .icons--blue {
+    &::before {
+      color: $tab-color;
+    }
+    &:hover::before {
+      color: $alternative-link-color;
+    }
+  }
+  
+  .icons--background-alternative {
+    font-size: 14px;
+    padding: 13px 13px 14px 13px;
+    background-color: $alternative-link-color;
+    color: $page-color;
+    &:hover {
+      padding: 12px 12px 13px 12px;
+      background-color: $page-color;
+      color: $alternative-link-color;
+      border: 1px solid $alternative-link-color;
+    }
+  }
+  
+  .fas--background::before {
+    color: $background-color;
+    margin: 0 25px 0 0;
+  }

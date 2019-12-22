@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container-app {
+    display: flex;
+    height: 100vh;
+    transition: 1s linear;
+  }
+  
+  .sidebar {
+    background-color: $black-color;
+    transition: 1s linear;
+    overflow: hidden;
+  }
+  
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    transition: 1s linear;
+  }
+  
+  .navigation {
+    background-color: $page-color;
+    height: $topbar-height;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $background-color;
+    transition: 1s linear;
+  }
+  
+  .container-section {
+    height: calc(100vh - #{$topbar-height});
+    overflow-y: scroll;
+    padding: 1em;
+    transition: 1s linear;
+  }
+  
+  .page {
+    background: $page-color;
+    border-radius: 4px;
+    margin: 1em;
+    opacity: 0;
+    transition: 1s linear;
+    min-width: 220px;
+    
+    &.active {
+      opacity: 100;
+    }
+  
+    &.deactive {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row--after {
+    position: relative;
+    &::after {
+      @include after();
+      width: 100%;
+      height: 0.5px;
+      background-color: $background-color;
+      bottom: 0;
+    }
+  }
+  
+  @media (max-width: 566px) {
+    @include grid("xs");
+  
+    .sidebar--change {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+  
+    .container-main--change {
+      flex: 0 55%;
+      max-width: 55%;
+    }
+  }
+  
+  @media (min-width: 567px) and (max-width: 766px) {
+    @include grid("sm");
+  
+    .sidebar--change {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  
+    .container-main--change {
+      flex: 0 70%;
+      max-width: 70%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    @include grid("md");
+  
+    .sidebar--change {
+      flex: 0 0 7%;
+      max-width: 7%;
+    }
+  
+    .container-main--change {
+      flex: 0 93%;
+      max-width: 93%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    @include grid("lg");
+  }
+  
+  @media (min-width: 1200px) {
+    @include grid("xl");
+  }

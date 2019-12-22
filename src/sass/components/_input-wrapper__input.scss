@@ -1,0 +1,42 @@
+.input-wrapper__input {
+    padding: 10px;
+    border: 1px solid $background-color;
+    border-radius: 3px;
+    width: 300px;
+    cursor: pointer;
+    outline: 0;
+    &:focus,
+    &:active,
+    &:hover {
+      border: 1px solid $button-color;
+    }
+  }
+  
+  .input-wrapper__input--date {
+    appearance: none;
+    border: 0;
+    font-size: 14px;
+    display: inline-block;
+    width: 150px;
+    border-radius: 0;
+    background-image: url("../../images/icons/calendar.svg");
+    background-size: 15px auto;
+    background-repeat: no-repeat;
+    background-position: right 28px center;
+    &:focus,
+    &:active,
+    &:hover {
+      border: 0;
+    }
+  }
+  
+  .input-wrapper__input--password {
+    appearance: none;
+    padding: 10px 10px 10px 30px;
+    display: inline-block;
+    border-radius: 0;
+    background-image: url("../../images/icons/password.svg");
+    background-size: 15px auto;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+  }

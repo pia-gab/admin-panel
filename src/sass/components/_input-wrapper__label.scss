@@ -1,0 +1,17 @@
+.input-wrapper__label {
+    color: $button-color;
+    font-weight: 700;
+    letter-spacing: 1px;
+    min-width: 150px;
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .input-wrapper__label--veritical {
+    display: block;
+  }
+  
+  .input-wrapper__label--background:hover {
+    cursor: pointer;
+    background: $background-color;
+  }

@@ -9,12 +9,11 @@
     "declaration-colon-space-after": "always",
     "declaration-block-semicolon-newline-after": null,
     "declaration-block-trailing-semicolon": "always",
-    "indentation": 2,
     "max-empty-lines": 2,
     "max-nesting-depth": [3, {
       "ignore": ["pseudo-classes"]
     }],
-    "rule-empty-line-before": [ "always", {
+    "rule-empty-line-before": [ null, {
       "except": ["first-nested"],
       "ignore": ["after-comment"]
     } ],

@@ -4,6 +4,9 @@
 @import 'partials/normalize';
 @import 'partials/layout';
 
+@import 'components/overlay';
+@import 'components/modal';
+
 @import 'components/title';
 @import 'components/title-main';
 @import 'components/title-page';
@@ -41,7 +44,7 @@
 
 @import 'components/media';
 
-@import 'sections/navigation';
+/*@import 'sections/navigation';
 @import 'sections/aside';
 @import 'sections/header';
-@import 'sections/main-section';
+@import 'sections/main-section';*/

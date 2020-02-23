@@ -1,1 +1,1 @@
-https://pia-gab.github.io/admin-panel/.
+https://pia-gab.github.io/admin-panel/index.html

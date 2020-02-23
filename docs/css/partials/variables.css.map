@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../../../src/sass/partials/variables.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAC,0EAAI;AAEZ,YAAY;AAaZ,WAAW;AAMX,WAAW"
+}
